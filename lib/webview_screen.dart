@@ -1,10 +1,8 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'dart:convert';
 import 'package:permission_handler/permission_handler.dart'
     hide PermissionStatus;
-import 'package:location/location.dart';
 
 class WebviewScreen extends StatefulWidget {
   final String appId;
@@ -67,11 +65,9 @@ class _WebviewScreenState extends State<WebviewScreen> {
     super.initState();
 
     initPermissions();
-
   }
 
   Future initPermissions() async {
-   
     if (await Permission.camera.request().isGranted) {
       setState(() {
         isGranted = true;
@@ -149,9 +145,9 @@ class _WebviewScreenState extends State<WebviewScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        //title: const Text("Dojah Widget"),
-        //backgroundColor: ,
-      ),
+          //title: const Text("Dojah Widget"),
+          //backgroundColor: ,
+          ),
       body: isGranted
           ? InAppWebView(
               initialData: InAppWebViewInitialData(
@@ -239,5 +235,3 @@ class _WebviewScreenState extends State<WebviewScreen> {
     );
   }
 }
-
-
