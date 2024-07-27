@@ -151,7 +151,7 @@ class _WebviewScreenState extends State<WebviewScreen> {
       body: isGranted
           ? InAppWebView(
               initialData: InAppWebViewInitialData(
-                baseUrl: Uri.parse("https://widget.dojah.io"),
+                baseUrl: WebUri.uri(Uri.parse("https://widget.dojah.io")),
                 androidHistoryUrl: Uri.parse("https://widget.dojah.io"),
                 mimeType: "text/html",
                 data: """
@@ -194,8 +194,8 @@ class _WebviewScreenState extends State<WebviewScreen> {
                       </html>
                   """,
               ),
-              initialUrlRequest:
-                  URLRequest(url: Uri.parse("https://widget.dojah.io")),
+              initialUrlRequest: URLRequest(
+                  url: WebUri.uri(Uri.parse("https://widget.dojah.io"))),
               initialOptions: options,
               onWebViewCreated: (controller) {
                 _webViewController = controller;
