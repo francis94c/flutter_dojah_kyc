@@ -16,7 +16,7 @@ dependencies:
     git:
       url: https://github.com/holzgeist/flutter_inappwebview
       path: flutter_inappwebview
-      ref: d89b1d32638b49dfc58c4b7c84153be0c269d057
+      ref: 6.0.0-beta.28
   permission_handler: ^11.0.0
   location: ^5.0.3
   js: ^0.6.3
