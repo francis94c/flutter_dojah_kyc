@@ -16,7 +16,7 @@ dependencies:
     git:
       url: https://github.com/francis94c/flutter_inappwebview.git
       ref: master
-      path: flutter_inappwebview
+      path: flutter_inappwebview_android
   permission_handler: ^11.0.0
   location: ^5.0.3
   js: ^0.6.3
