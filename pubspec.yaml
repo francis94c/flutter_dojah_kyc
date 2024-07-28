@@ -14,7 +14,7 @@ dependencies:
   # flutter_inappwebview: ^6.0.0
   flutter_inappwebview:
     git:
-      url: https://github.com/toshiossada/flutter_inappwebview.git
+      url: https://github.com/francis94c/flutter_inappwebview.git
       path: flutter_inappwebview
       ref: master
   permission_handler: ^11.0.0
