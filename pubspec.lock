@@ -59,7 +59,7 @@ packages:
     description:
       path: flutter_inappwebview
       ref: master
-      resolved-ref: "07008f7ac0c335f52dd0c31244b94e2f76654ce7"
+      resolved-ref: f4a63354d9cbe7c840ff11e59cc1eb686ad30eba
       url: "https://github.com/francis94c/flutter_inappwebview.git"
     source: git
     version: "6.0.0"
